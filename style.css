@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400 900;
+  font-style: normal;
+}
+
+:root {
+  --color-primary: #f4d04e;
+  --color-grey-950: #111111;
+  --color-grey-500: #6b6b6b;
+  --color-white: #ffffff;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background-color: var(--color-primary);
+  font-family: "Figtree", Helvetica, sans-serif;
+}
+
+.card {
+  width: 380px;
+  padding: 24px;
+  background-color: var(--color-white);
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 0 var(--color-grey-950);
+
+  display: grid;
+  gap: 24px;
+}
+
+.card__image {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card__content {
+  display: grid;
+  gap: 12px;
+  justify-items: flex-start;
+}
+
+.card__content-tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 4px;
+
+  color: var(--color-grey-950);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.card__content-date {
+  /* text-preset-3 */
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #111111;
+}
+
+.card__content-header {
+  /* text-preset-1 */
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 150%;
+  color: #111111;
+}
+
+.card__content-description {
+  /* text-preset-2 */
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #6b6b6b;
+}
+
+.card__author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card__author-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.card__author-name {
+  /* text-preset-3-bold */
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 150%;
+  color: #111111;
+}
